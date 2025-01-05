@@ -1,0 +1,168 @@
+@media screen and (max-width: 1024px) {
+  .side-nav {
+    position: fixed;
+    width: 100%;
+    aspect-ratio: 1;
+    padding: 2rem;
+    background: rgba(225, 225, 225, 0.5);
+    backdrop-filter: blur(5px);
+    top: 0;
+    right: 0;
+    border-radius: 0% 100% 0% 100% / 0% 0% 100% 100%;
+    display: flex;
+    z-index: 1;
+    overflow: hidden;
+
+    /* hide side nav */
+    transform: scale(0);
+    transform-origin: top right;
+  }
+
+  .show-side-nav {
+    transform: scale(1);
+    transform-origin: top right;
+  }
+
+  .side-nav menu {
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .side-nav menu li a {
+    font-size: 1.8rem;
+  }
+
+  .toggle-side-nav-btn {
+    display: flex;
+  }
+
+  section {
+    max-width: 80%;
+  }
+
+  .heading {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .sub-heading {
+    font-size: 2rem;
+  }
+
+  .next-link {
+    display: none;
+  }
+
+  /* HERO */
+  #hero {
+    flex-direction: column-reverse;
+    justify-content: start;
+    padding-top: 4rem;
+    gap: 4rem;
+  }
+
+  .profile-photo,
+  .about-photo {
+    height: 10rem;
+  }
+
+  #profile-details .name {
+    font-size: 2rem;
+  }
+
+  #profile-details .career {
+    font-size: 1.25rem;
+  }
+
+  .download-cv-link,
+  .contact-info-link {
+    width: 7.5rem;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  /* ABOUT */
+  .about-details,
+  .info-cards-container {
+    flex-direction: column;
+  }
+
+  .info-card {
+    width: 90%;
+  }
+
+  .about-photo {
+    border-radius: 1.75rem;
+  }
+
+  .about-summery {
+    font-size: 0.9rem;
+    width: 90%;
+    text-align: center;
+  }
+
+  /* EXPERIENCE */
+  #experience {
+    margin-top: 4rem;
+  }
+
+  .experience-cards-container {
+    flex-direction: column;
+  }
+
+  .experience-title {
+    font-size: 1.5rem;
+  }
+
+  .experience-card {
+    gap: 1rem;
+  }
+
+  .skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .skills-grid .skill-item span {
+    font-size: 1rem;
+  }
+
+  /* PROJECTS */
+  #projects {
+    margin-top: 4rem;
+  }
+
+  .projects-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* CONTACTS */
+  .contact-details {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .contact-details a span {
+    font-size: 0.8rem;
+  }
+
+  /* FOOTER */
+  .footer-nav menu {
+    flex-direction: column;
+  }
+
+  .footer-nav menu li a {
+    font-size: 1rem;
+  }
+}
